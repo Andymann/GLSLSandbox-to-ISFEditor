@@ -1,0 +1,54 @@
+/*{
+    "CATEGORIES": [
+        "XXX"
+    ],
+    "CREDIT": "",
+    "INPUTS": [
+        {
+            "DEFAULT": [
+                0.5,
+                0.5
+            ],
+            "LABEL": "lblMouse",
+            "MAX": [
+                1,
+                1
+            ],
+            "MIN": [
+                0,
+                0
+            ],
+            "NAME": "mouse",
+            "TYPE": "point2D"
+        }
+    ],
+    "ISFVSN": "2"
+}
+*/
+
+#ifdef GL_ES
+precision mediump float;
+#endif
+
+//----This way you do not have to search-replace those 
+//----uniforms in the code from glslsandbox:
+vec2 resolution = RENDERSIZE;
+float time = TIME;
+
+// The lines aboe are the boilerplate for a syntactically 
+// correct shader in ISF editor. Create a new shader in ISF,
+// delete everything and copy-paste the above code.
+//
+// The code below is the boilerplate in glslsandbox.
+// We don't need it.
+// In the shader on the website, mark everything below
+// those lines, copy paste into ISF editor:
+//
+// #ifdef GL_ES
+// precision highp float;
+// #endif
+//
+//uniform float time;
+//uniform vec2 mouse;
+//uniform vec2 resolution;
+//
